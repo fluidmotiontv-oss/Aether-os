@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
+@keyframes breathe {
+  0%, 100% {
+    transform: scale3d(1, 1, 1);
+    box-shadow: 0 10px 25px -5px rgba(139, 92, 246, 0.25), 0 8px 10px -6px rgba(139, 92, 246, 0.2);
+  }
+  50% {
+    transform: scale3d(1.035, 1.035, 1.035);
+    box-shadow: 0 20px 40px -5px rgba(139, 92, 246, 0.45), 0 12px 15px -6px rgba(139, 92, 246, 0.35);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-breathe {
+  animation: breathe 4s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}

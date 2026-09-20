@@ -1,0 +1,6 @@
+{
+  "name": "Aether.OS",
+  "description": "A futuristic spatial web operating system featuring neural AI intelligence, interactive quantum shell, ethereal soundscapes, synaptic notes, and dynamic workspaces.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
